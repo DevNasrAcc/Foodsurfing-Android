@@ -1,0 +1,114 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:colorPrimary">#d71a6a</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="colorAccent">@android:color/white</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorPrimary">@android:color/black</item>
+    </style>
+
+    <style name="AppTheme1" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:colorPrimary">#d71a6a</item>
+        <item name="colorPrimaryDark">#d71a6a</item>
+        <item name="colorAccent">@android:color/white</item>
+        <item name="android:navigationBarColor">#d71a6a</item>
+    </style>
+
+    <style name="AppTheme1a" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:colorPrimary">#d71a6a</item>
+        <item name="colorPrimaryDark">#d71a6a</item>
+        <item name="colorAccent">@android:color/white</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+    </style>
+
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:colorPrimary">#d71a6a</item>
+        <item name="colorPrimaryDark">#ffffff</item>
+        <item name="colorAccent">@android:color/white</item>
+        <item name="android:navigationBarColor">#ffffff</item>
+    </style>
+
+    <style name="AppTheme3" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:colorPrimary">#d71a6a</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">@android:color/white</item>
+        <item name="android:navigationBarColor">#000000</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+
+    <style name="AppTabLayout" parent="Widget.Design.TabLayout">
+
+        <item name="tabIndicatorColor">?attr/colorAccent</item>
+        <item name="tabIndicatorHeight">4dp</item>
+        <item name="tabPaddingStart">6dp</item>
+        <item name="tabPaddingEnd">6dp</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="tabTextAppearance">@style/AppTabTextAppearance</item>
+        <item name="tabSelectedTextColor">@android:color/white</item>
+    </style>
+
+    <style name="AppTabTextAppearance" parent="TextAppearance.Design.Tab">
+
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/back1</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/MyCustomTabText</item>
+    </style>
+
+    <style name="MyCustomTabText" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Theme_Filter_Dialog" parent="android:Theme.Holo.Dialog">
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+        <item name="android:gravity">center</item>
+        <item name="android:colorPrimary">#d71a6a</item>
+        <item name="colorPrimaryDark">#d71a6a</item>
+        <item name="colorAccent">@android:color/white</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+    </style>
+
+    <style name="HowItWorksTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:colorPrimary">@android:color/black</item>
+        <item name="colorPrimaryDark">@android:color/black</item>
+        <item name="colorAccent">@android:color/white</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+    </style>
+
+    <style name="WhiteCheckTheme" parent="android:Theme.Holo.Dialog">
+        <item name="colorAccent">@android:color/white</item>
+        <item name="buttonTint">@android:color/white</item>
+    </style>
+
+    <style name="BlackCheckTheme" parent="android:Theme.Holo.Dialog">
+        <item name="colorAccent">@android:color/black</item>
+        <item name="buttonTint">@android:color/black</item>
+    </style>
+
+    <style name="StatsDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">#d71a6a</item>
+    </style>
+
+</resources>

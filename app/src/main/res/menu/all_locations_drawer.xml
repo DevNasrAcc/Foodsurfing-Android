@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:id="@+id/alloptions">
+    <item
+        android:icon="@mipmap/home"
+        android:id="@+id/home"
+        android:title="Home"/>
+
+    <item
+        android:icon="@mipmap/myorders"
+        android:id="@+id/myorders"
+        android:title="Meine Bestellungen"/>
+
+    <item
+        android:icon="@mipmap/browsefood"
+        android:id="@+id/browsefood"
+        android:title="Browse food" />
+
+    <item
+        android:icon="@mipmap/favoritemeals"
+        android:id="@+id/favoritemeals"
+        android:title="Lieblingsessen" />
+
+    <item
+        android:icon="@mipmap/howitworks"
+        android:id="@+id/howitworks"
+        android:title="So funktionert’s" />
+
+    <item
+            android:icon="@mipmap/logout"
+            android:id="@+id/logout"
+            android:title="Abmelden" />
+    </group>
+
+    <group android:id="@+id/other">
+        <item
+            android:id="@+id/invite"
+            android:title="Freunde einladen"/>
+
+        <item
+            android:id="@+id/services"
+            android:title="Services"/>
+
+        <item
+            android:id="@+id/follow"
+            android:title="Folge uns auf Fb" />
+
+        <item
+            android:id="@+id/mailTo"
+            android:title="Kontakt" />
+
+        <item
+            android:id="@+id/websiteFoodsurfing"
+            android:title="Webseite" />
+    </group>
+
+</menu>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:padding="5dp"
+        >
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/favcover"
+            android:id="@+id/childLogoSettings"/>
+
+
+        <com.adeel.foodsurfing.CustomTextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height= "wrap_content"
+            app:customFont="fonts/AmaticSC-Bold.ttf"
+            android:text="Restaurant Name"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/childLogoSettings"
+            android:layout_toEndOf="@+id/childLogoSettings"
+            android:textColor="@color/back1"
+            android:id="@+id/ChildMealHeading"
+            />
+
+        <com.adeel.foodsurfing.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height= "wrap_content"
+            app:customFont="fonts/AmaticSC-Bold.ttf"
+            android:text="3.05"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/Settcurrency"
+            android:layout_toStartOf="@+id/Settcurrency"
+            android:textSize="20dp"
+            android:textColor="@color/back1"
+            android:id="@+id/Settprice"
+            />
+
+        <com.adeel.foodsurfing.CustomTextView
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height= "wrap_content"
+            app:customFont="fonts/AmaticSC-Bold.ttf"
+            android:text="E"
+            android:textSize="20dp"
+            android:textColor="@color/back1"
+            android:id="@+id/Settcurrency"
+            />
+
+        <com.adeel.foodsurfing.CustomTextView
+            android:layout_marginTop="5dp"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/Settprice"
+            android:layout_toRightOf="@+id/childLogoSettings"
+            android:layout_toEndOf="@+id/childLogoSettings"
+            android:layout_width="wrap_content"
+            android:layout_height= "wrap_content"
+            app:customFont="fonts/Lato-Regular.ttf"
+            android:text="3.05 Ekna cascn asck jnas ckjas nck janckj anckjas ncsaj kkjna ksjcn kasjdn asdj kasndkj akjdnkja kjnasdknas dbjhbd ck jnas ckjas nck janckj anckjas ncsaj kkjna ksjcn kasjdn asdj kasndkj akjdnkja kjnasdknas dbjhbd"
+            android:textSize="13dp"
+            android:textColor="@color/back3"
+            android:id="@+id/SettingsCildDesc"
+            />
+
+        <Button
+            android:layout_marginTop="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/SettingsCildDesc"
+            android:textSize="14dp"
+            android:textAllCaps="false"
+            android:layout_width="75dp"
+            android:layout_height="25dp"
+            android:background="@drawable/bgbutton"
+            android:text="Speichern"
+            android:id="@+id/ChildSettingsSave"
+            android:textColor="@color/back2"
+            />
+
+        <com.adeel.foodsurfing.CustomEditText
+            android:layout_marginTop="8dp"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:layout_toLeftOf="@+id/ChildSettingsSave"
+            android:layout_toStartOf="@+id/ChildSettingsSave"
+            android:layout_below="@+id/SettingsCildDesc"
+            android:text="0"
+            android:imeOptions="actionDone"
+            android:id="@+id/SettingsCounter"
+            android:textSize="12dp"
+            android:textColor="@color/back1"
+            app:customFont="fonts/Lato-Regular.ttf"
+            android:background="@drawable/bgcountitem"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            />
+
+        <ImageButton
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/iconminus"
+            android:layout_toLeftOf="@+id/SettingsAdd"
+            android:layout_toStartOf="@+id/SettingsAdd"
+            android:layout_below="@+id/SettingsCildDesc"
+            android:layout_width="25dp"
+            android:id="@+id/SettingsMinus"
+            android:layout_height="25dp" />
+
+        <ImageButton
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/iconplus"
+            android:layout_toLeftOf="@+id/ChildSettingsSave"
+            android:layout_toStartOf="@+id/ChildSettingsSave"
+            android:layout_below="@+id/SettingsCildDesc"
+            android:layout_width="25dp"
+            android:id="@+id/SettingsAdd"
+            android:layout_height="25dp" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.adeel.foodsurfing.LocationCardsFragment">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        app:tabBackground="@drawable/tabback"
+        android:layout_alignParentBottom="true"
+        app:tabIndicatorColor="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/MyCustomTabLayout"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@android:color/white"
+        app:tabTextColor="@android:color/white"
+        android:background="@color/back1"
+        app:tabGravity="fill"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_above="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"  />
+
+
+
+
+
+</RelativeLayout>

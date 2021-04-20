@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingBottom="5dp" >
+
+    <com.adeel.foodsurfing.CustomTextView
+        app:customFont="fonts/Lato-Regular.ttf"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/restaurantname"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="Lulu Foods"
+        android:gravity="center_vertical"
+        android:textColor="@color/back1"
+        android:textSize="13dp"
+        android:textStyle="bold" />
+
+    <com.adeel.foodsurfing.CustomTextView
+        app:customFont="fonts/Lato-Regular.ttf"
+        android:layout_toRightOf="@+id/restaurantname"
+        android:layout_toEndOf="@+id/restaurantname"
+        android:id="@+id/pickupaddress"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:drawableRight="@drawable/iconlocmini"
+        android:gravity="center_vertical"
+        android:text="  - 3116 Parkway Drive "
+        android:textSize="11dp" />
+
+    <ImageView
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/mealicon"
+        android:layout_below="@+id/restaurantname"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/iconorderfood"
+        android:visibility="gone" />
+
+    <com.adeel.foodsurfing.CustomTextView
+        android:layout_toRightOf="@+id/mealicon"
+        android:layout_toEndOf="@+id/mealicon"
+        app:customFont="fonts/Lato-Regular.ttf"
+        android:id="@+id/mealname"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_below="@+id/restaurantname"
+        android:gravity="center"
+        android:text="Special Peporoni Pizze "
+        android:textColor="#333333"
+        android:textSize="8dp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <com.adeel.foodsurfing.CustomTextView
+        app:customFont="fonts/Lato-Regular.ttf"
+        android:id="@+id/pickuptime"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/restaurantname"
+        android:drawableLeft="@drawable/iconclockmini"
+        android:gravity="center_vertical"
+        android:text="11:00 - 13:00 "
+        android:textSize="11dp" />
+
+    <ImageView
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:id="@+id/quantityicon"
+        android:layout_below="@+id/pickuptime"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/iconqty"/>
+
+    <com.adeel.foodsurfing.CustomTextView
+        app:customFont="fonts/Lato-Bold.ttf"
+        android:layout_below="@+id/pickuptime"
+        android:layout_toRightOf="@+id/quantityicon"
+        android:layout_toEndOf="@+id/quantityicon"
+        android:id="@+id/quantityname"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:gravity="center"
+        android:text="QTY. "
+        android:textColor="@color/colorAccent"
+        android:textSize="11dp" />
+
+    <com.adeel.foodsurfing.CustomTextView
+        android:layout_marginTop="-5dp"
+        app:customFont="fonts/Lato-Regular.ttf"
+        android:layout_toRightOf="@+id/quantityname"
+        android:layout_toEndOf="@+id/quantityname"
+        android:id="@+id/quantityicon1"
+        android:layout_below="@+id/pickuptime"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:textSize="10dp"
+        android:textColor="@color/back2"
+        android:text="71"
+        android:gravity="center"
+        android:background="@drawable/iconqtymini"/>
+
+    <ImageView
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/quantityicon1"
+        android:layout_toEndOf="@+id/quantityicon1"
+        android:id="@+id/calendericon"
+        android:layout_below="@+id/pickuptime"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/iconordercalendar"/>
+
+    <com.adeel.foodsurfing.CustomTextView
+        app:customFont="fonts/Lato-Bold.ttf"
+        android:layout_below="@+id/pickuptime"
+        android:layout_toRightOf="@+id/calendericon"
+        android:layout_toEndOf="@+id/calendericon"
+        android:id="@+id/calendername"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:gravity="center"
+        android:text="4 - 05 - 2017"
+        android:textColor="@color/colorAccent"
+        android:textSize="11dp" />
+
+    <ImageView
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/calendername"
+        android:layout_toEndOf="@+id/calendername"
+        android:id="@+id/amounticon"
+        android:layout_below="@+id/pickuptime"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/iconorderamount"/>
+
+    <com.adeel.foodsurfing.CustomTextView
+        app:customFont="fonts/Lato-Bold.ttf"
+        android:layout_below="@+id/pickuptime"
+        android:layout_toRightOf="@+id/amounticon"
+        android:layout_toEndOf="@+id/amounticon"
+        android:id="@+id/amountname"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:gravity="center"
+        android:text="100"
+        android:textColor="@color/colorAccent"
+        android:textSize="11dp" />
+
+    <ImageView
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="1.2dp"
+        android:background="@color/back1"
+        android:id="@+id/line6"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="60dp" />
+
+
+</RelativeLayout>

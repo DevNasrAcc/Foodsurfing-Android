@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@color/back2"
+    android:id="@+id/itemmainlayout">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/MainHeader">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/favcover"
+            android:id="@+id/HeaderLogo"/>
+
+        <com.adeel.foodsurfing.CustomTextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height= "wrap_content"
+            app:customFont="fonts/AmaticSC-Bold.ttf"
+            android:text="Restaurant Name"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/HeaderLogo"
+            android:layout_toEndOf="@+id/HeaderLogo"
+            android:textColor="@color/back1"
+            android:id="@+id/RestHeaderName"
+            />
+
+        <com.adeel.foodsurfing.CustomTextView
+            android:layout_marginTop="5dp"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/RestHeaderName"
+            android:layout_toLeftOf="@+id/RestHeaderName"
+            android:layout_toRightOf="@+id/HeaderLogo"
+            android:layout_toEndOf="@+id/HeaderLogo"
+            android:layout_width="match_parent"
+            android:layout_height= "wrap_content"
+            app:customFont="fonts/Lato-Regular.ttf"
+            android:text="3.05 Ekna cascn asck jnas ckjas nck janckj anckjas ncsaj kkjna ksjcn kasjdn asdj kasndkj akjdnkja kjnasdknas dbjhbds asck jnas ckjas nck janckj anckjas ncsaj kkjna ksjcn kasjdn asdj kasndkj akjdnkja kjnasdknas dbjhbds"
+            android:textSize="13dp"
+            android:textColor="@color/back3"
+            android:id="@+id/headerdescriptionSettings"
+            />
+
+        <com.adeel.foodsurfing.CustomTextView
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_marginTop="-5dp"
+            android:textColor="@color/back1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:visibility="gone"
+            android:layout_below="@+id/headerdescriptionSettings"
+            android:layout_toRightOf="@+id/pcover1"
+            android:layout_toEndOf="@+id/pcover1"
+            android:layout_width="wrap_content"
+            android:text="Mehr Info"
+            android:layout_height="wrap_content"
+            app:customFont="fonts/Lato-Regular.ttf"/>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/headerdescriptionSettings"
+            android:textSize="14dp"
+            android:textAllCaps="false"
+            android:layout_width="75dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/bgbutton"
+            android:text="Speichern"
+            android:id="@+id/HeaderSaveSettings"
+            android:textColor="@color/back2"
+            />
+
+        <com.adeel.foodsurfing.CustomEditText
+            android:id="@+id/settingsEndTime"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:layout_marginRight="14dp"
+            android:layout_marginEnd="14dp"
+            android:inputType="time"
+            android:hint="18:00"
+            android:textSize="13dp"
+            android:maxLength="5"
+            android:textCursorDrawable="@null"
+            android:textColor="@color/back1a"
+            android:background="@drawable/bgcountitem"
+            android:layout_alignTop="@+id/HeaderSaveSettings"
+            android:layout_toLeftOf="@+id/HeaderSaveSettings"
+            android:layout_toStartOf="@+id/HeaderSaveSettings" />
+
+        <com.adeel.foodsurfing.CustomEditText
+            android:id="@+id/settingsStartTime"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:layout_marginRight="14dp"
+            android:layout_marginEnd="14dp"
+            android:inputType="time"
+            android:hint="15:00"
+            android:textSize="13dp"
+            android:maxLength="5"
+            android:textCursorDrawable="@null"
+            android:textColor="@color/back1a"
+            android:background="@drawable/bgcountitem"
+            android:layout_alignTop="@+id/settingsEndTime"
+            android:layout_toLeftOf="@+id/settingsEndTime"
+            android:layout_toStartOf="@+id/settingsEndTime" />
+
+        <com.adeel.foodsurfing.CustomTextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Abholzeit"
+            android:textColor="@color/back3"
+            android:layout_marginRight="14dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginTop="4dp"
+            android:layout_alignTop="@+id/settingsStartTime"
+            android:layout_toLeftOf="@+id/settingsStartTime"
+            android:layout_toStartOf="@+id/settingsStartTime"
+            app:customFont="fonts/Lato-Regular.ttf" />
+
+        <Spinner
+            android:id="@+id/spinnerSettings"
+            android:visibility="gone"
+            android:layout_width="110dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:entries="@array/Type_arrays"
+            android:background="@drawable/inputs"
+            android:layout_alignBottom="@+id/HeaderSaveSettings"
+            android:layout_toLeftOf="@+id/HeaderSaveSettings"
+            android:layout_toStartOf="@+id/HeaderSaveSettings" />
+
+        <ImageView
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="1.2dp"
+            android:background="@color/back1"
+            android:id="@+id/line6"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="130dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verfügbar Portionen"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/cardview_dark_background"
+            android:layout_below="@+id/line6"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MainHeader"
+        android:layout_marginTop="7dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ChildView">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</RelativeLayout>

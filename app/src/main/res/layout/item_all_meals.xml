@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@color/back2"
+    android:id="@+id/itemmainlayout">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/asda"
+        android:id="@+id/pcover"/>
+
+    <ImageView
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/favcover"
+        android:id="@+id/pcover1"/>
+
+    <ImageView
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/iconunfavproduct"
+        android:id="@+id/plike"/>
+
+    <com.adeel.foodsurfing.CustomTextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height= "wrap_content"
+        app:customFont="fonts/AmaticSC-Bold.ttf"
+        android:text="Restaurant Name"
+        android:textSize="18dp"
+        android:layout_toRightOf="@+id/pcover1"
+        android:layout_toEndOf="@+id/pcover1"
+        android:textColor="@color/back1"
+        android:id="@+id/pname"
+        />
+
+    <com.adeel.foodsurfing.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height= "wrap_content"
+        app:customFont="fonts/AmaticSC-Bold.ttf"
+        android:text="3.05"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/pcurrency"
+        android:layout_toStartOf="@+id/pcurrency"
+        android:textSize="17dp"
+        android:textColor="@color/back1"
+        android:id="@+id/pprice"
+        />
+
+    <com.adeel.foodsurfing.CustomTextView
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height= "wrap_content"
+        app:customFont="fonts/AmaticSC-Bold.ttf"
+        android:text="E"
+        android:textSize="17dp"
+        android:textColor="@color/back1"
+        android:id="@+id/pcurrency"
+        />
+
+    <com.adeel.foodsurfing.CustomTextView
+        android:layout_marginTop="5dp"
+        android:maxLines="2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/pprice"
+        android:layout_toLeftOf="@+id/pprice"
+        android:layout_toStartOf="@+id/pprice"
+        android:layout_toRightOf="@+id/pcover1"
+        android:layout_toEndOf="@+id/pcover1"
+        android:layout_width="match_parent"
+        android:layout_height= "wrap_content"
+        app:customFont="fonts/Lato-Regular.ttf"
+        android:text="3.05 Ekna cascn asck jnas ckjas nck janckj anckjas ncsaj kkjna ksjcn kasjdn asdj kasndkj akjdnkja kjnasdknas dbjhbds"
+        android:textSize="10dp"
+        android:textColor="@color/back3"
+        android:id="@+id/pdescription"
+        />
+
+    <ImageView
+        android:src="@drawable/iconrestaurant"
+        android:id="@+id/presi"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_width="15dp"
+        android:layout_below="@+id/pdescription"
+        android:layout_toRightOf="@+id/pcover1"
+        android:layout_toEndOf="@+id/pcover1"
+        android:layout_height="15dp" />
+
+    <com.adeel.foodsurfing.CustomTextView
+        android:textColor="@color/back1"
+        android:textSize="14dp"
+        android:text="KFO Foods"
+        android:id="@+id/pres"
+        android:layout_marginTop="5dp"
+        app:customFont="fonts/Lato-Bold.ttf"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/pdescription"
+        android:layout_toRightOf="@+id/presi"
+        android:layout_toEndOf="@+id/presi"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

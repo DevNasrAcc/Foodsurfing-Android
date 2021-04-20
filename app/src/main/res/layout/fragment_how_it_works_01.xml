@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_screen1">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar"
+        android:background="@color/back1a"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true" />
+
+    <com.adeel.foodsurfing.CustomTextView
+        app:customFont="fonts/AmaticSC-Bold.ttf"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:id="@+id/header"
+        android:text="So funktionert’s"
+        android:gravity="center"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@android:color/background_light"
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.adeel.foodsurfing.CustomTextView
+            app:customFont="fonts/AmaticSC-Bold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/slide_1_title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/slide_title"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/img_width_height"
+            android:layout_height="@dimen/img_width_height"
+            android:src="@drawable/suchen" />
+
+        <com.adeel.foodsurfing.CustomTextView
+            app:customFont="fonts/Lato-Bold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="@dimen/desc_padding"
+            android:paddingRight="@dimen/desc_padding"
+            android:text="@string/slide_1_desc"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/slide_desc"
+            android:lineSpacingExtra="@dimen/slide_desc_line_height" />
+
+    </LinearLayout>
+</RelativeLayout>

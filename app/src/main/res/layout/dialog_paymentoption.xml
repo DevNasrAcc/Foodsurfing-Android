@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.adeel.foodsurfing.CustomTextView
+        app:customFont="fonts/Lato-Regular.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Zahlungsmöglichkeiten auswählen"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/back2"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:background="@drawable/bgbutton"
+        android:id="@+id/choosetext" />
+
+    <ImageButton
+        android:background="@android:drawable/ic_menu_close_clear_cancel"
+        android:layout_width="30dp"
+        android:id="@+id/closer"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        />
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/choosetext"
+        android:id="@+id/chooselayout">
+
+        <RadioGroup
+            android:checkedButton="@drawable/buttonbackground4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/chooseradiogroup"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <RadioButton
+                android:buttonTint="@color/back1"
+                android:id="@+id/radio1"
+                android:layout_width="100dp"
+                android:layout_height="74dp"
+                android:drawableLeft="@drawable/visa"
+                android:drawableStart="@drawable/visa"
+                />
+            <RadioButton
+                android:buttonTint="@color/back1"
+                android:id="@+id/radio2"
+                android:layout_width="100dp"
+                android:layout_height="74dp"
+                android:drawableLeft="@drawable/paypal"
+                android:drawableStart="@drawable/paypal"
+                />
+        </RadioGroup>
+</RelativeLayout>
+
+    <com.adeel.foodsurfing.CustomTextView
+        app:customFont="fonts/Lato-Bold.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bezahlen"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:background="@drawable/bgbutton"
+        android:layout_below="@+id/chooselayout"
+        android:textColor="@color/back2"
+        android:layout_marginTop="20dp"
+        android:id="@+id/pay" />
+
+</RelativeLayout>

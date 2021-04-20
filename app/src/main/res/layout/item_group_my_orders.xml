@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/ordericon"
+        android:src="@drawable/iconordernumber"
+        android:padding="10dp"
+        />
+
+    <com.adeel.foodsurfing.CustomTextView
+        app:customFont="fonts/Lato-Bold.ttf"
+        android:text="# Ord-0080081"
+        android:textSize="20dp"
+        android:textColor="#333333"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/ordernumber"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/ordericon"
+        android:layout_toEndOf="@+id/ordericon" />
+
+    <com.adeel.foodsurfing.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="3.05"
+        android:textSize="30dp"
+        android:id="@+id/orderprice"
+        android:textColor="@color/back1"
+        app:customFont="fonts/AmaticSC-Bold.ttf"
+        android:layout_toLeftOf="@+id/orderexpand"
+        android:layout_toStartOf="@+id/orderexpand"
+        android:gravity="center_vertical"/>
+
+    <ImageView
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/orderexpand"
+        android:src="@drawable/iconexpand"
+        android:padding="10dp"/>
+
+</RelativeLayout>

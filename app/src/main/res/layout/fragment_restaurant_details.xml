@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back1"
+    tools:context="com.adeel.foodsurfing.RestaurantDetailsFragment">
+
+    <ImageView
+        android:id="@+id/cover"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+    <View
+        android:layout_margin="10dp"
+        android:id="@+id/circle_shape"
+        android:background="@drawable/circle_shape"
+        android:layout_width="25dp"
+        android:layout_height="25dp"/>
+
+    <ImageView
+        android:id="@+id/headerlogo"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+    <com.adeel.foodsurfing.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:customFont="fonts/AmaticSC-Bold.ttf"
+        android:text="The Restaurant"
+        android:textSize="30dp"
+        android:layout_below="@+id/headerlogo"
+        android:textColor="@color/back2"
+        android:id="@+id/name"
+        />
+
+    <com.adeel.foodsurfing.CustomTextView
+        android:id="@+id/restaurant_address"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/cover"
+        android:layout_centerHorizontal="true"
+        android:background="@color/back2"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Adresse: Oststrasse 18, 47475 Kamp-Lintfort, Germany"
+        android:textColor="@color/back1"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:visibility="gone"
+        android:layout_below="@+id/restaurant_address"
+        app:tabBackground="@color/back2"
+        app:tabIndicatorColor="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        app:tabPaddingStart="20dp"
+        style="@style/MyCustomTabLayout"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/back1"
+        app:tabTextColor="@color/back3"
+        android:background="@color/back2"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:layout_marginTop="2dp"
+        android:background="@color/back2"
+        android:layout_below="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewpager">
+    </android.support.v4.view.ViewPager>
+</RelativeLayout>

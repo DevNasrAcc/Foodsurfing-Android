@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@color/back1"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/mid"/>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_toLeftOf="@+id/mid"
+        android:layout_toStartOf="@+id/mid">
+        <com.adeel.foodsurfing.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/back2"
+            android:textSize="30dp"
+            android:id="@+id/totalitemstext"
+            android:layout_height="wrap_content"
+            app:customFont="fonts/AmaticSC-Bold.ttf"
+            android:text="Gesamtbestellung"/>
+
+        <com.adeel.foodsurfing.CustomTextView
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/totalitemstext"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/back2"
+            android:textSize="45dp"
+            android:text="0"
+            android:id="@+id/totalitemsdata"
+            android:layout_height="wrap_content"
+            app:customFont="fonts/AmaticSC-Bold.ttf"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_toRightOf="@+id/mid"
+        android:layout_toEndOf="@+id/mid">
+        <com.adeel.foodsurfing.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/back2"
+            android:textSize="30dp"
+            android:id="@+id/totalamounttext"
+            android:layout_height="wrap_content"
+            app:customFont="fonts/AmaticSC-Bold.ttf"
+            android:text="Gesamtbetrag"/>
+
+        <com.adeel.foodsurfing.CustomTextView
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/totalamounttext"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/back2"
+            android:textSize="45dp"
+            android:text="0.0"
+            android:id="@+id/totalamountdata"
+            android:layout_height="wrap_content"
+            app:customFont="fonts/AmaticSC-Bold.ttf"
+           />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/proceed"
+        android:layout_marginTop="130dp" >
+
+        <android.support.v7.widget.RecyclerView
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/allmeals">
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+    <com.adeel.foodsurfing.CustomTextView
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/back1"
+        android:textSize="24dp"
+        android:id="@+id/middle"
+        android:text="Keine Artikel zum Warenkorb hinzugefügt"
+        android:layout_height="wrap_content"
+        app:customFont="fonts/Lato-Regular.ttf"/>
+
+    <com.adeel.foodsurfing.CustomTextView
+        app:customFont="fonts/Lato-Regular.ttf"
+        android:text="Weiter"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/back2"
+        android:background="@color/back1"
+        android:textSize="15dp"
+        android:padding="15dp"
+        android:gravity="center"
+        android:id="@+id/proceed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

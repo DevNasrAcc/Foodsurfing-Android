@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.adeel.foodsurfing.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rname"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Retaurant Name"
+        android:textSize="20dp"
+        android:textColor="@color/back1"
+        app:customFont="fonts/Lato-Regular.ttf"
+        />
+
+    <com.adeel.foodsurfing.CustomTextView
+        android:text="0 km"
+        android:gravity="center"
+        android:textSize="11dp"
+        android:textColor="@color/back3"
+        app:customFont="fonts/Lato-Regular.ttf"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rdescription"
+        android:layout_below="@+id/rname"/>
+
+
+    <com.adeel.foodsurfing.CustomTextView
+        android:text="Schließen"
+        android:textSize="13dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@android:color/white"
+        app:customFont="fonts/Lato-Regular.ttf"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="30dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:paddingRight="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/close"
+        android:layout_below="@+id/rdescription"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttonbackground"/>
+
+</RelativeLayout>

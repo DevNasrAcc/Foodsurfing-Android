@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="7dp"
+    android:background="@color/back2"
+    android:id="@+id/itemmainlayout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/topItem">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/asda"
+        android:id="@+id/pcover"/>
+
+    <ImageView
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/favcover"
+        android:id="@+id/pcover1"/>
+
+    <ImageView
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/iconunfavproduct"
+        android:id="@+id/plike"/>
+
+    <com.adeel.foodsurfing.CustomTextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height= "wrap_content"
+        app:customFont="fonts/AmaticSC-Bold.ttf"
+        android:text="Restaurant Name sdadgadadfafdaf dgad"
+        android:textSize="24dp"
+        android:layout_toRightOf="@+id/pcover1"
+        android:layout_toEndOf="@+id/pcover1"
+        android:textColor="@color/back1"
+        android:id="@+id/pname"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:maxLength="28"
+        />
+
+    <com.adeel.foodsurfing.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height= "wrap_content"
+        app:customFont="fonts/AmaticSC-Bold.ttf"
+        android:text="3.05"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="12dp"
+        android:layout_toLeftOf="@+id/pcurrency"
+        android:layout_toStartOf="@+id/pcurrency"
+        android:textSize="22dp"
+        android:textColor="@color/back1"
+        android:id="@+id/pprice"
+        />
+
+    <com.adeel.foodsurfing.CustomTextView
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height= "wrap_content"
+        android:layout_marginTop="12dp"
+        app:customFont="fonts/AmaticSC-Bold.ttf"
+        android:text="E"
+        android:textSize="22dp"
+        android:textColor="@color/back1"
+        android:id="@+id/pcurrency"
+        />
+
+    <ImageView
+        android:src="@drawable/iconqty"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/pquantityicon"
+        android:layout_below="@+id/pcurrency"
+        android:layout_toRightOf="@+id/pcover1"
+        android:layout_toEndOf="@+id/pcover1"/>
+
+    <com.adeel.foodsurfing.CustomTextView
+        android:textSize="12dp"
+        app:customFont="fonts/Lato-Regular.ttf"
+        android:textStyle="bold"
+        android:paddingLeft="3dp"
+        android:paddingStart="3dp"
+        android:paddingEnd="3dp"
+        android:paddingRight="3dp"
+        android:textColor="@color/back1"
+        android:id="@+id/pquantitytext"
+        android:layout_below="@+id/pcurrency"
+        android:layout_toRightOf="@+id/pquantityicon"
+        android:layout_toEndOf="@+id/pquantityicon"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:text="Portionen übrig"
+        android:layout_height="wrap_content" />
+
+    <com.adeel.foodsurfing.CustomTextView
+        android:textSize="11dp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/back2"
+        android:id="@+id/pquantitydata"
+        android:layout_below="@+id/pcurrency"
+        android:layout_toRightOf="@+id/pquantitytext"
+        android:layout_toEndOf="@+id/pquantitytext"
+        android:background="@drawable/iconqtyleft"
+        android:layout_width="25dp"
+        app:customFont="fonts/Lato-Regular.ttf"
+        android:text="10"
+        android:layout_height="25dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pcurrency"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+                <ImageButton
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/iconminus"
+                    android:layout_width="25dp"
+                    android:id="@+id/pminus"
+                    android:layout_height="25dp" />
+
+                <com.adeel.foodsurfing.CustomEditText
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:text="10"
+                    android:imeOptions="actionDone"
+                    android:id="@+id/pcounter"
+                    android:textSize="12dp"
+                    android:textColor="@color/back1"
+                    app:customFont="fonts/Lato-Regular.ttf"
+                    android:background="@drawable/bgcountitem"
+                    />
+
+                <ImageButton
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/iconplus"
+                    android:layout_width="25dp"
+                    android:id="@+id/padd"
+                    android:layout_height="25dp" />
+        </LinearLayout>
+
+        <com.adeel.foodsurfing.CustomTextView
+            android:gravity="center"
+            android:padding="5dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:customFont="fonts/AmaticSC-Bold.ttf"
+            android:text="Ausverkauft"
+            android:textSize="18dp"
+            android:layout_below="@+id/pcurrency"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/back2"
+            android:id="@+id/pnotavailable"
+            android:visibility="invisible"
+            android:background="@color/bg_pickup" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp" >
+        <com.adeel.foodsurfing.CustomTextView
+            android:textSize="10dp"
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:paddingTop="5dp"
+            android:textColor="@color/back1"
+            android:id="@+id/pviewmore"
+            android:layout_below="@+id/topItem"
+            android:layout_width="wrap_content"
+            android:text="Mehr Info"
+            android:layout_height="wrap_content"
+            app:customFont="fonts/Lato-Regular.ttf"/>
+
+        <com.adeel.foodsurfing.CustomTextView
+            android:textSize="14dp"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/bg_pickup"
+            android:text="Abholzeit: 09:00 - 16:00"
+            android:layout_below="@+id/pviewmore"
+            android:id="@+id/ppickuptime"
+            android:gravity="center"
+            android:textColor="@color/back2" />
+
+        <Button
+            android:layout_marginTop="1dp"
+            android:textSize="14dp"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bgbutton"
+            android:text="Hinzufügen"
+            android:layout_below="@+id/ppickuptime"
+            android:id="@+id/pbuy"
+            android:textColor="@color/back2" />
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/scpr"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_weight="1">-->
+
+        <ScrollView
+            android:id="@+id/scp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp" >
+
+            <com.adeel.foodsurfing.CustomTextView
+                android:id="@+id/pdescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="10dp"
+                android:text="3.05 Ekna cascn asck jnas ckj ckjas nck janckj anckjas ncsaj kkjna ksjcn kasjdn asdj kasndkj akjdnkja kjnasdknas dbjhbds 3.05 Ekna cascn asck jnas ckj ckjas nck janckj anckjas ncsaj kkjna ksjcn kasjdn asdj kasndkj akjdnkja kjnasdknas 3.05 Ekna cascn asck jnas ckj ckjas nck janckj anckjas ncsaj kkjna ksjcn kasjdn asdj kasndkj akjdnkja kjnasdknas dbjhbds 3.05 Ekna cascn asck jnas ckj ckjas nck janckj anckjas ncsaj kkjna ksjcn kasjdn asdj kasndkj akjdnkja kjnasdknas 3.05 Ekna cascn asck jnas ckj ckjas nck janckj anckjas ncsaj kkjna ksjcn kasjdn asdj kasndkj akjdnkja kjnasdknas dbjhbds 3.05 Ekna cascn asck jnas ckj ckjas nck janckj anckjas ncsaj kkjna ksjcn kasjdn asdj kasndkj akjdnkja kjnasdknas 3.05 Ekna cascn asck jnas ckj ckjas nck janckj anckjas ncsaj kkjna ksjcn kasjdn asdj kasndkj akjdnkja kjnasdknas dbjhbds 3.05 Ekna cascn asck jnas ckj ckjas nck janckj anckjas ncsaj kkjna ksjcn kasjdn asdj kasndkj akjdnkja kjnasdknas 3.05 Ekna cascn asck jnas ckj ckjas nck janckj anckjas ncsaj kkjna ksjcn kasjdn asdj kasndkj akjdnkja kjnasdknas dbjhbds 3.05 Ekna cascn asck jnas ckj ckjas nck janckj anckjas ncsaj kkjna ksjcn kasjdn asdj kasndkj akjdnkja kjnasdknas 3.05 Ekna cascn asck jnas ckj ckjas nck janckj anckjas ncsaj kkjna ksjcn kasjdn asdj kasndkj akjdnkja kjnasdknas dbjhbds 3.05 Ekna cascn asck jnas ckj ckjas nck janckj anckjas ncsaj kkjna ksjcn kasjdn asdj kasndkj akjdnkja kjnasdknas"
+                android:textColor="@color/back3"
+                android:textSize="12dp"
+                app:customFont="fonts/Lato-Regular.ttf" />
+
+        </ScrollView>
+    <!--</LinearLayout>-->
+
+</LinearLayout>

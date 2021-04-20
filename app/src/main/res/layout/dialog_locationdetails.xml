@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:id="@+id/itemmainlayout"
+    android:background="@drawable/iconicbg">
+
+    <com.adeel.foodsurfing.CustomTextView
+        android:layout_margin="1dp"
+        app:customFont="fonts/AmaticSC-Bold.ttf"
+        android:id="@+id/itemdetailsid"
+        android:textSize="1dp"
+        android:text="3"
+        android:textColor="@color/back1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+        <com.adeel.foodsurfing.CustomTextView
+            android:layout_margin="10dp"
+            app:customFont="fonts/AmaticSC-Bold.ttf"
+            android:id="@+id/itemdetailsheader"
+            android:textSize="18dp"
+            android:text="nisdfn NIsvsv"
+            android:textColor="@color/back1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    <com.adeel.foodsurfing.CustomTextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        app:customFont="fonts/Lato-Regular.ttf"
+        android:id="@+id/itemdetailsaddress"
+        android:layout_marginTop="20dp"
+        android:textSize="16dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:text="nisdfn NIsv asdasdasdsv afasf qdasdasd asd asdasdasdadsadas"
+        android:layout_below="@+id/itemdetailsheader"
+        android:textColor="#333333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <com.adeel.foodsurfing.CustomTextView
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:textColor="#333333"
+        android:text="M. Adeel"
+        android:textSize="12dp"
+        app:customFont="fonts/Lato-Regular.ttf"
+        android:id="@+id/itemdetailscontact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <com.adeel.foodsurfing.CustomTextView
+        android:textSize="12dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:textColor="#333333"
+        android:text="131540586432"
+        android:layout_below="@+id/itemdetailscontact"
+        app:customFont="fonts/Lato-Regular.ttf"
+        android:id="@+id/itemdetailsphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <com.adeel.foodsurfing.CustomTextView
+        android:layout_alignParentBottom="true"
+        app:customFont="fonts/Lato-Bold.ttf"
+        android:text="Auschecken"
+        android:textSize="18dp"
+        android:id="@+id/apply"
+        android:textColor="@color/back2"
+        android:background="@drawable/bgbutton"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+</RelativeLayout>

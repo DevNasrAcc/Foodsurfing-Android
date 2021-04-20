@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingBottom="5dp"
+    >
+
+    <com.adeel.foodsurfing.CustomTextView
+        app:customFont="fonts/Lato-Regular.ttf"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/statCreatedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="Lulu Foods"
+        android:gravity="center_vertical"
+        android:textColor="@color/back1"
+        android:textSize="13dp"
+        android:textStyle="bold" />
+
+    <com.adeel.foodsurfing.CustomTextView
+        app:customFont="fonts/Lato-Regular.ttf"
+        android:visibility="gone"
+        android:layout_toRightOf="@+id/statCreatedDate"
+        android:layout_toEndOf="@+id/statCreatedDate"
+        android:id="@+id/StatsUserEmail"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:gravity="center_vertical"
+        android:text="  - 3116 Parkway Drive "
+        android:textSize="11dp" />
+
+<!--
+    <com.adeel.foodsurfing.CustomTextView
+        app:customFont="fonts/Lato-Regular.ttf"
+        android:id="@+id/booking_pickuptime"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_toEndOf="@+id/StatsUserEmail"
+        android:layout_toRightOf="@+id/StatsUserEmail"
+        android:drawableLeft="@drawable/iconclockmini"
+        android:gravity="center_vertical"
+        android:text="11AM - 9PM "
+        android:textSize="10dp" />
+-->
+
+
+    <ImageView
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/booking_mealicon"
+        android:layout_below="@+id/statCreatedDate"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/iconorderfood"
+        android:visibility="gone"/>
+
+    <com.adeel.foodsurfing.CustomTextView
+        android:layout_toRightOf="@+id/booking_mealicon"
+        android:layout_toEndOf="@+id/booking_mealicon"
+        app:customFont="fonts/Lato-Regular.ttf"
+        android:id="@+id/Stats_mealname"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_below="@+id/statCreatedDate"
+        android:gravity="center"
+        android:text="Special Peporoni Pizze "
+        android:textColor="#333333"
+        android:textSize="9dp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/quantityicon"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/iconqty"
+        android:layout_below="@+id/statCreatedDate"
+        android:layout_toRightOf="@+id/Stats_mealname"
+        android:layout_toEndOf="@+id/Stats_mealname" />
+
+    <com.adeel.foodsurfing.CustomTextView
+        app:customFont="fonts/Lato-Bold.ttf"
+        android:layout_below="@+id/statCreatedDate"
+        android:layout_toRightOf="@+id/quantityicon"
+        android:layout_toEndOf="@+id/quantityicon"
+        android:id="@+id/Stats_quantityname"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:gravity="center"
+        android:text="QTY. "
+        android:textColor="@color/colorAccent"
+        android:textSize="11dp" />
+
+    <com.adeel.foodsurfing.CustomTextView
+        android:layout_marginTop="-5dp"
+        app:customFont="fonts/Lato-Regular.ttf"
+        android:layout_toRightOf="@+id/Stats_quantityname"
+        android:layout_toEndOf="@+id/Stats_quantityname"
+        android:id="@+id/Stats_quantityicon1"
+        android:layout_below="@+id/statCreatedDate"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:textSize="11dp"
+        android:textColor="@color/back2"
+        android:text="21"
+        android:gravity="center"
+        android:background="@drawable/iconqtymini"/>
+
+   <!-- <ImageView
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/booking_quantityicon1"
+        android:layout_toEndOf="@+id/booking_quantityicon1"
+        android:id="@+id/booking_calendericon"
+        android:layout_below="@+id/statCreatedDate"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/iconordercalendar"/>
+
+    <com.adeel.foodsurfing.CustomTextView
+        app:customFont="fonts/Lato-Bold.ttf"
+        android:layout_below="@+id/statCreatedDate"
+        android:layout_toRightOf="@+id/booking_calendericon"
+        android:layout_toEndOf="@+id/booking_calendericon"
+        android:id="@+id/booking_calendername"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:gravity="center"
+        android:text="4 - 05 - 2017"
+        android:textColor="@color/colorAccent"
+        android:textSize="8dp" />-->
+
+    <ImageView
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/Stats_quantityicon1"
+        android:layout_toEndOf="@+id/Stats_quantityicon1"
+        android:id="@+id/booking_amounticon"
+        android:layout_below="@+id/statCreatedDate"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/iconorderamount"/>
+
+    <com.adeel.foodsurfing.CustomTextView
+        app:customFont="fonts/Lato-Bold.ttf"
+        android:layout_below="@+id/statCreatedDate"
+        android:layout_toRightOf="@+id/booking_amounticon"
+        android:layout_toEndOf="@+id/booking_amounticon"
+        android:id="@+id/Stats_amountname"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:gravity="center"
+        android:text="4 - 05 - 2017"
+        android:textColor="@color/colorAccent"
+        android:textSize="11dp" />
+
+    <ImageView
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="1.2dp"
+        android:background="@color/back1"
+        android:id="@+id/line6"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp" />
+
+
+</RelativeLayout>

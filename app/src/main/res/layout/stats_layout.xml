@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.adeel.foodsurfing.Fragments.Bookings">
+
+    <com.adeel.foodsurfing.CustomTextView
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/back1"
+        android:textSize="24dp"
+        android:id="@+id/Stats_middle"
+        android:text="Keine Bestellungen gefunden"
+        android:layout_height="wrap_content"
+        app:customFont="fonts/Lato-Regular.ttf"/>
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/dateLayout">
+
+        <ImageView
+        android:id="@+id/imageViewTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/iconordercalendar"
+
+        android:layout_toRightOf="@+id/FromDate"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/FromDate" />
+
+    <TextView
+        android:id="@+id/ToDate"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="date"
+        android:text="Enddatum"
+        android:gravity="center"
+
+        android:layout_toRightOf="@+id/imageViewTo"
+        android:layout_toEndOf="@+id/imageViewTo" />
+
+    <ImageView
+        android:id="@+id/imageViewFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="12dp"
+
+
+        android:src="@drawable/iconordercalendar" />
+
+    <TextView
+        android:id="@+id/FromDate"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/ToDate"
+        android:layout_toEndOf="@+id/imageViewFrom"
+        android:layout_toRightOf="@+id/imageViewFrom"
+        android:ems="10"
+        android:layout_marginTop="3dp"
+        android:inputType="date"
+        android:text="Startdatum" />
+
+    <Button
+        android:id="@+id/SearchBtn"
+        android:layout_width="55dp"
+        android:layout_height="35dp"
+        android:textSize="12dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/bgbutton"
+        android:textColor="@color/back2"
+        android:text="Suche"
+        android:layout_marginTop="3dp"
+        android:layout_alignTop="@+id/ToDate"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="5dp" />
+
+</RelativeLayout>
+
+    <ImageView
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="1.2dp"
+        android:background="@color/back1"
+        android:id="@+id/line6"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="42dp" />
+
+    <ExpandableListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="65dp"
+        android:id="@+id/Stats_list"
+        android:scrollbars="vertical"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_below="@+id/Stats_middle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

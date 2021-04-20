@@ -1,0 +1,520 @@
+    <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:openDrawer="start">
+
+        <include
+            layout="@layout/app_layout_locations"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start">
+            <RelativeLayout
+                android:id="@+id/navrel"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+
+                <ImageView
+                    android:id="@+id/topper"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/asda"/>
+
+                <com.adeel.foodsurfing.CustomTextView
+                    android:id="@+id/status"
+                    android:padding="10dp"
+                    android:text="Login/Konto erstellen"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="115dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ScrollView
+                    android:id="@+id/sc"
+                    android:layout_below="@+id/topper"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+               <RelativeLayout
+                        android:id="@+id/scc"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+
+                   <RelativeLayout
+                    android:paddingLeft="20dp"
+                    android:paddingStart="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingEnd="20dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/home"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:id="@+id/homeicon"
+                        android:background="@drawable/iconhomeen"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        />
+
+                    <com.adeel.foodsurfing.CustomTextView
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_centerVertical="true"
+                        app:customFont="fonts/Lato-Bold.ttf"
+                        android:textColor="@color/back1"
+                        android:textSize="15dp"
+                        android:text="Home"
+                        android:layout_toRightOf="@+id/homeicon"
+                        android:layout_toEndOf="@+id/homeicon"
+                        android:id="@+id/hometext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1.2dp"
+                        android:background="@color/back1"
+                        android:id="@+id/line1"
+                        android:layout_alignParentBottom="true"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:paddingLeft="20dp"
+                    android:paddingStart="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingEnd="20dp"
+                    android:layout_below="@+id/home"
+                    android:id="@+id/myorders"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:id="@+id/myordersicon"
+                        android:background="@drawable/iconorder"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        />
+
+                    <com.adeel.foodsurfing.CustomTextView
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_centerVertical="true"
+                        app:customFont="fonts/Lato-Bold.ttf"
+                        android:textColor="#333333"
+                        android:textSize="15dp"
+                        android:text="Meine Bestellungen"
+                        android:layout_toRightOf="@+id/myordersicon"
+                        android:layout_toEndOf="@+id/myordersicon"
+                        android:id="@+id/myorderstext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:visibility="invisible"
+                        android:layout_width="match_parent"
+                        android:layout_height="1.2dp"
+                        android:background="@color/back1"
+                        android:id="@+id/line2"
+                        android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:paddingLeft="20dp"
+                    android:paddingStart="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingEnd="20dp"
+                    android:layout_below="@+id/StatsLayout"
+                    android:id="@+id/userprofile"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:id="@+id/userprofileicon"
+                        android:background="@drawable/iconuser"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        />
+
+                    <com.adeel.foodsurfing.CustomTextView
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_centerVertical="true"
+                        app:customFont="fonts/Lato-Bold.ttf"
+                        android:textColor="#333333"
+                        android:textSize="15dp"
+                        android:text="Benutzerprofil"
+                        android:layout_toRightOf="@+id/userprofileicon"
+                        android:layout_toEndOf="@+id/userprofileicon"
+                        android:id="@+id/userprofiletext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:visibility="invisible"
+                        android:layout_width="match_parent"
+                        android:layout_height="1.2dp"
+                        android:background="@color/back1"
+                        android:id="@+id/line3"
+                        android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+
+
+                   <RelativeLayout
+                    android:paddingLeft="20dp"
+                    android:paddingStart="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingEnd="20dp"
+                    android:layout_below="@+id/myorders"
+                    android:id="@+id/favoritemeals"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:id="@+id/favoritemealsicon"
+                        android:background="@drawable/iconfavorite"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        />
+
+                    <com.adeel.foodsurfing.CustomTextView
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_centerVertical="true"
+                        app:customFont="fonts/Lato-Bold.ttf"
+                        android:textColor="#333333"
+                        android:textSize="15dp"
+                        android:text="Lieblingsessen"
+                        android:layout_toRightOf="@+id/favoritemealsicon"
+                        android:layout_toEndOf="@+id/favoritemealsicon"
+                        android:id="@+id/favoritemealstext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:visibility="invisible"
+                        android:layout_width="match_parent"
+                        android:layout_height="1.2dp"
+                        android:background="@color/back1"
+                        android:id="@+id/line4"
+                        android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:paddingLeft="20dp"
+                    android:paddingStart="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingEnd="20dp"
+                    android:layout_below="@+id/SettingsLayout"
+                    android:id="@+id/howitworks"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:id="@+id/howitworksicon"
+                        android:background="@drawable/iconhowitwork"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        />
+
+                    <com.adeel.foodsurfing.CustomTextView
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_centerVertical="true"
+                        app:customFont="fonts/Lato-Bold.ttf"
+                        android:textColor="#333333"
+                        android:textSize="15dp"
+                        android:text="So funktionert’s"
+                        android:layout_toRightOf="@+id/howitworksicon"
+                        android:layout_toEndOf="@+id/howitworksicon"
+                        android:id="@+id/howitworkstext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:visibility="invisible"
+                        android:layout_width="match_parent"
+                        android:layout_height="1.2dp"
+                        android:background="@color/back1"
+                        android:id="@+id/line5"
+                        android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+
+                   <!--booking layout-->
+                   <RelativeLayout
+                       android:paddingLeft="20dp"
+                       android:paddingStart="20dp"
+                       android:paddingRight="20dp"
+                       android:paddingEnd="20dp"
+                       android:layout_marginTop="20dp"
+                       android:id="@+id/bookingsLayout"
+                       android:layout_width="match_parent"
+                       android:layout_height="50dp"
+                       android:layout_below="@+id/favoritemeals"
+                       android:layout_alignParentRight="true"
+                       android:layout_alignParentEnd="true">
+                       <ImageView
+                           android:layout_centerVertical="true"
+                           android:id="@+id/bookingsIcon"
+                           android:background="@mipmap/bookings"
+                           android:layout_width="22dp"
+                           android:layout_height="22dp"
+                           />
+
+                       <com.adeel.foodsurfing.CustomTextView
+                           android:layout_marginLeft="8dp"
+                           android:layout_marginStart="8dp"
+                           android:layout_centerVertical="true"
+                           app:customFont="fonts/Lato-Bold.ttf"
+                           android:textColor="#333333"
+                           android:textSize="15dp"
+                           android:text="Bestellungen"
+                           android:layout_toRightOf="@+id/bookingsIcon"
+                           android:layout_toEndOf="@+id/bookingsIcon"
+                           android:id="@+id/bookingsText"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"/>
+
+                       <ImageView
+                           android:visibility="invisible"
+                           android:layout_width="match_parent"
+                           android:layout_height="1.2dp"
+                           android:background="@color/back1"
+                           android:id="@+id/bookingLine"
+                           android:layout_alignParentBottom="true"
+                           android:layout_alignParentLeft="true"
+                           android:layout_alignParentStart="true" />
+                   </RelativeLayout>
+
+                   <!--Stats Layout-->
+
+                   <RelativeLayout
+                       android:paddingLeft="20dp"
+                       android:paddingStart="20dp"
+                       android:paddingRight="20dp"
+                       android:paddingEnd="20dp"
+                       android:id="@+id/StatsLayout"
+                       android:layout_width="match_parent"
+                       android:layout_height="50dp"
+                       android:layout_below="@+id/bookingsLayout"
+                       android:layout_alignParentRight="true"
+                       android:layout_alignParentEnd="true">
+                       <ImageView
+                           android:layout_centerVertical="true"
+                           android:id="@+id/StatsIcon"
+                           android:background="@mipmap/statistics"
+                           android:layout_width="22dp"
+                           android:layout_height="22dp"
+                           />
+
+                       <com.adeel.foodsurfing.CustomTextView
+                           android:layout_marginLeft="8dp"
+                           android:layout_marginStart="8dp"
+                           android:layout_centerVertical="true"
+                           app:customFont="fonts/Lato-Bold.ttf"
+                           android:textColor="#333333"
+                           android:textSize="15dp"
+                           android:text="Statistiken"
+                           android:layout_toRightOf="@+id/StatsIcon"
+                           android:layout_toEndOf="@+id/StatsIcon"
+                           android:id="@+id/StatsText"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"/>
+
+                       <ImageView
+                           android:visibility="invisible"
+                           android:layout_width="match_parent"
+                           android:layout_height="1.2dp"
+                           android:background="@color/back1"
+                           android:id="@+id/StatsLine"
+                           android:layout_alignParentBottom="true"
+                           android:layout_alignParentLeft="true"
+                           android:layout_alignParentStart="true" />
+                   </RelativeLayout>
+
+                   <RelativeLayout
+                       android:paddingLeft="20dp"
+                       android:paddingStart="20dp"
+                       android:paddingRight="20dp"
+                       android:paddingEnd="20dp"
+                       android:id="@+id/SettingsLayout"
+                       android:layout_width="match_parent"
+                       android:layout_height="50dp"
+                       android:layout_below="@+id/userprofile"
+                       android:layout_alignParentRight="true"
+                       android:layout_alignParentEnd="true">
+                       <ImageView
+                           android:layout_centerVertical="true"
+                           android:id="@+id/SettingsIcon"
+                           android:background="@drawable/iconhowitwork"
+                           android:layout_width="22dp"
+                           android:layout_height="22dp"
+                           />
+
+                       <com.adeel.foodsurfing.CustomTextView
+                           android:layout_marginLeft="8dp"
+                           android:layout_marginStart="8dp"
+                           android:layout_centerVertical="true"
+                           app:customFont="fonts/Lato-Bold.ttf"
+                           android:textColor="#333333"
+                           android:textSize="15dp"
+                           android:text="Heutige Portionen"
+                           android:layout_toRightOf="@+id/SettingsIcon"
+                           android:layout_toEndOf="@+id/SettingsIcon"
+                           android:id="@+id/SettingsText"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"/>
+
+                       <ImageView
+                           android:visibility="invisible"
+                           android:layout_width="match_parent"
+                           android:layout_height="1.2dp"
+                           android:background="@color/back1"
+                           android:id="@+id/SettingsLine"
+                           android:layout_alignParentBottom="true"
+                           android:layout_alignParentLeft="true"
+                           android:layout_alignParentStart="true" />
+                   </RelativeLayout>
+
+                <RelativeLayout
+                    android:paddingLeft="20dp"
+                    android:paddingStart="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingEnd="20dp"
+                    android:id="@+id/logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/howitworks"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:id="@+id/logouticon"
+                        android:background="@drawable/iconlogout"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        />
+
+                    <com.adeel.foodsurfing.CustomTextView
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_centerVertical="true"
+                        app:customFont="fonts/Lato-Bold.ttf"
+                        android:textColor="#333333"
+                        android:textSize="15dp"
+                        android:text="Abmelden"
+                        android:layout_toRightOf="@+id/logouticon"
+                        android:layout_toEndOf="@+id/logouticon"
+                        android:id="@+id/logouttext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:visibility="invisible"
+                        android:layout_width="match_parent"
+                        android:layout_height="1.2dp"
+                        android:background="@color/back1"
+                        android:id="@+id/line6"
+                        android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+
+
+
+                <ImageView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1.0dp"
+                    android:background="#333333"
+                    android:id="@+id/line"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_below="@+id/logout"/>
+
+                <com.adeel.foodsurfing.CustomTextView
+                    android:id="@+id/invitefriends"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="#333333"
+                    android:layout_below="@+id/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:gravity="center_vertical"
+                    android:text="Freunde einladen"
+                    />
+
+                <com.adeel.foodsurfing.CustomTextView
+                    android:id="@+id/services"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:textColor="#333333"
+                    android:visibility="gone"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_below="@+id/invitefriends"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:gravity="center_vertical"
+                    android:text="Services"
+                    />
+
+                <com.adeel.foodsurfing.CustomTextView
+                    android:id="@+id/follow"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:textColor="#333333"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_below="@+id/services"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:gravity="center_vertical"
+                    android:text="Folge uns auf Fb"
+                    />
+
+                   <com.adeel.foodsurfing.CustomTextView
+                       android:id="@+id/mailTo"
+                       android:layout_marginLeft="20dp"
+                       android:layout_marginStart="20dp"
+                       android:textColor="#333333"
+                       android:layout_marginTop="15dp"
+                       android:layout_marginBottom="10dp"
+                       android:layout_below="@+id/follow"
+                       android:layout_width="match_parent"
+                       android:layout_height="20dp"
+                       android:gravity="center_vertical"
+                       android:text="Kontakt"
+                       />
+
+                   <com.adeel.foodsurfing.CustomTextView
+                       android:id="@+id/websiteFoodsurfing"
+                       android:layout_marginLeft="20dp"
+                       android:layout_marginStart="20dp"
+                       android:textColor="#333333"
+                       android:layout_marginTop="15dp"
+                       android:layout_marginBottom="10dp"
+                       android:layout_below="@+id/mailTo"
+                       android:layout_width="match_parent"
+                       android:layout_height="20dp"
+                       android:gravity="center_vertical"
+                       android:text="Webseite"
+                       />
+
+                    </RelativeLayout>
+                </ScrollView>
+
+            </RelativeLayout>
+        </android.support.design.widget.NavigationView>
+
+    </android.support.v4.widget.DrawerLayout>

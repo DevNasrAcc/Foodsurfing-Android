@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/toucher"
+    android:background="@mipmap/bg"
+    tools:context="com.adeel.foodsurfing.SignUp_Register">
+
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:src="@drawable/logo"
+        android:id="@+id/mainlogo"/>
+
+    <EditText
+        android:layout_below="@+id/mainlogo"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:hint="Vorname"
+        android:textSize="14dp"
+        android:textColorHint="@color/safe_mode_text"
+        android:textColor="@android:color/white"
+        android:background="@mipmap/inputfields"
+        android:layout_width="wrap_content"
+        android:id="@+id/firstname"
+        android:inputType="textPersonName"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/firstname"
+        android:padding="5dp"
+        android:hint="Name"
+        android:textSize="13dp"
+        android:textColorHint="@color/safe_mode_text"
+        android:textColor="@android:color/white"
+        android:background="@mipmap/inputfields"
+        android:layout_width="wrap_content"
+        android:id="@+id/lastname"
+        android:inputType="textPersonName"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <EditText
+        android:gravity="center"
+        android:layout_below="@+id/lastname"
+        android:padding="5dp"
+        android:hint="Email"
+        android:textSize="13dp"
+        android:textColorHint="@color/safe_mode_text"
+        android:textColor="@android:color/white"
+        android:background="@mipmap/inputfields"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:id="@+id/email"
+        android:inputType="textEmailAddress"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <EditText
+        android:gravity="center"
+        android:padding="5dp"
+        android:hint="Passwort"
+        android:textSize="13dp"
+        android:textColorHint="@color/safe_mode_text"
+        android:textColor="@android:color/white"
+        android:background="@mipmap/inputfields"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:id="@+id/password"
+        android:inputType="textPassword"
+        android:fontFamily="sans-serif"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:layout_centerInParent="true"/>
+
+    <EditText
+        android:id="@+id/confirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/inputfields"
+        android:gravity="center"
+        android:hint="Passwort wiederholen"
+        android:inputType="textPassword"
+        android:fontFamily="sans-serif"
+        android:padding="5dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/safe_mode_text"
+        android:textSize="13dp" />
+
+    <LinearLayout
+        android:id="@+id/checboxOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/confirmPassword"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/tosCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/WhiteCheckTheme" />
+
+        <com.adeel.foodsurfing.CustomTextView
+            android:id="@+id/tosClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:text="@string/tosText"
+            android:textColor="#fff"
+            android:textSize="11dp" />
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_below="@+id/checboxOption"
+        android:background="@android:color/transparent"
+        android:src="@mipmap/signupbutton"
+        android:layout_marginTop="10dp"
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_marginBottom="10dp"
+        android:textColor="@android:color/white"
+        android:background="@android:color/transparent"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textSize="12dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/signintext"
+        android:fontFamily="sans-serif-light"/>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:padding="2dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/buttonbackground3"
+        android:id="@+id/progresslayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:id="@+id/one"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:indeterminateDrawable="@drawable/progress"/>
+
+        <ProgressBar
+            android:id="@+id/two"
+            android:padding="20dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:indeterminateDrawable="@drawable/progress2"/>
+
+        <com.adeel.foodsurfing.CustomTextView
+            app:customFont="fonts/Lato-Regular.ttf"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:text="Signing up, wait!"
+            android:paddingLeft="20dp"
+            android:paddingEnd="20dp"
+            android:id="@+id/progressstatus"
+            android:paddingRight="20dp"
+            android:paddingStart="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/one"
+            android:layout_toRightOf="@+id/one"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

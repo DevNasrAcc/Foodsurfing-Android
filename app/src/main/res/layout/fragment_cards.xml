@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.adeel.foodsurfing.CardsTabFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/alllocations">
+    </android.support.v7.widget.RecyclerView>
+
+    <com.adeel.foodsurfing.CustomTextView
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/back1"
+        android:textSize="24dp"
+        android:id="@+id/mid"
+        android:text="Keine Standorten in der Nähe vorhanden"
+        android:layout_height="wrap_content"
+        app:customFont="fonts/Lato-Regular.ttf"/>
+
+</RelativeLayout>

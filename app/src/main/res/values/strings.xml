@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">Foodsurfing</string>
+    <!--<string name="facebook_app_id">634249083432401</string>
+    <string name="fb_login_protocol_scheme">fb189364778254742</string>-->
+
+    <string name="facebook_app_id">875548129275594</string>
+    <string name="fb_login_protocol_scheme">fb875548129275594</string>
+
+    <string name="NearBy">Restaurants in der Nähe</string>
+    <string name="title_activity_maps">Karte</string>
+    <string name="navigation_drawer_open">open</string>
+    <string name="navigation_drawer_close">Schließen</string>
+
+
+    <string name="change_card">Change details</string>
+    <string name="confirm_purchase">Confirm Purchase</string>
+    <string name="Done">Done</string>
+    <string name="completing_purchase">Completing purchase&#8230;</string>
+    <string name="enter_details">Enter card details</string>
+    <string name="purchase_successful">Your purchase was a success!</string>
+    <string name="total">Total</string>
+    <string name="or">or</string>
+
+    <string-array name="Type_arrays">
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>2 hours</item>
+        <item>3 hours</item>
+        <item>4 hours</item>
+    </string-array>
+
+    <string name="forgotpasswordtext"><u>Passwort vergessen?</u></string>
+    <string name="signuptext">Noch kein Benutzerkonto? <u>Registrieren</u></string>
+    <string name="signintext">Haben bereits ein Konto? <u>Anmelden</u></string>
+    <string name="title_activity_all_locations">Karte</string>
+    <string name="noloc"><span>Zur Zeit gibt es keine Restaurants in Ihrer Nähe,</span><br /><span> aber wir arbeiten hart daran</span></string>
+    <string name="noloc2"><span>Finden Sie den Job interessant?</span><br /><span> Dann kontaktieren Sie uns bitte</span></string>
+    <string name="thelink"><u>www.foodsurfing.eu/contact</u></string>
+    <string name="tosText"><u>Ich akzeptiere die AGB und Datenschutzbestimmungen von Foodsurfing.</u></string>
+
+    <string name="style_json">
+  [
+    {
+      \"featureType\": \"poi.business\",
+      \"elementType\": \"all\",
+      \"stylers\": [
+        {
+          \"visibility\": \"off\"
+        }
+      ]
+    },
+    {
+      \"featureType\": \"transit\",
+      \"elementType\": \"labels.icon\",
+      \"stylers\": [
+        {
+          \"visibility\": \"off\"
+        }
+      ]
+    }
+  ]
+  </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="more_details"><u>Mehr</u></string>
+    <string name="less_details"><u>Weniger</u></string>
+
+    <!-- How it works fragment (screen) design -->
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">DONE</string>
+
+    <string name="slide_1_title">SUCHEN</string>
+    <string name="slide_1_desc">Tippe einfach Deine Postleitzahl oder die Straße ein, in der Du dich gerade befindest.</string>
+
+    <string name="slide_2_title">AUSWÄHLEN</string>
+    <string name="slide_2_desc">Wähle Dein Lieblingsrestaurant und kaufe Dein Essen bequem online.</string>
+
+    <string name="slide_3_title">ABHOLEN</string>
+    <string name="slide_3_desc">Besuche das Restaurant im angegebenen Zeitraum, zeige Deine Quittung und hol Dir Dein Essen.</string>
+
+    <string name="slide_4_title">ESSEN</string>
+    <string name="slide_4_desc">Genieße Dein Essen mit dem guten Gefühl etwas gegen die Verschwendung gemacht zu haben.</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+    <!-- How it works fragment (screen) design -->
+
+    <string name="skip_text_underlined"><u>Überspringen</u></string>
+</resources>

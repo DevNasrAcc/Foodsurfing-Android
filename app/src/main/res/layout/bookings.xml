@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.adeel.foodsurfing.Fragments.Bookings">
+
+    <ExpandableListView
+        android:focusable="false"
+        android:background="@android:color/transparent"
+        android:id="@+id/bookings_list"
+        android:scrollbars="vertical"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ExpandableListView>
+
+    <com.adeel.foodsurfing.CustomTextView
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/back1"
+        android:textSize="24dp"
+        android:id="@+id/middle"
+        android:text="Keine Bestellungen gefunden"
+        android:layout_height="wrap_content"
+        app:customFont="fonts/Lato-Regular.ttf"/>
+
+</RelativeLayout>

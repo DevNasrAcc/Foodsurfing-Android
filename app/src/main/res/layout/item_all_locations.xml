@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginRight="10dp"
+    android:id="@+id/itemmainlayout">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:layout_height="match_parent"
+        android:id="@+id/itemcover"/>
+
+    <View
+        android:layout_margin="10dp"
+        android:id="@+id/item_circle_shape"
+        android:background="@drawable/circle_shape"
+        android:layout_width="25dp"
+        android:layout_height="25dp"/>
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:id="@+id/itemdetailslayout"
+        android:background="@color/back1"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/itemdetailsheader"
+            android:layout_margin="5dp"
+            android:textSize="22dp"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <ImageView
+            android:layout_margin="5dp"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:id="@+id/itemdetailspickupicon"
+            android:layout_below="@+id/itemdetailsheader"
+            android:src="@drawable/iconpickup"/>
+
+        <TextView
+            android:textSize="11dp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Abholzeit: 15:30 - 16:00"
+            android:id="@+id/itemdetailspickuptext"
+            android:layout_below="@+id/itemdetailsheader"
+            android:layout_toRightOf="@+id/itemdetailspickupicon"
+            android:layout_toEndOf="@+id/itemdetailspickupicon"/>
+
+        <ImageView
+            android:layout_toRightOf="@+id/itemdetailspickuptext"
+            android:layout_toEndOf="@+id/itemdetailspickuptext"
+            android:layout_margin="5dp"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:id="@+id/itemdetailslocateicon"
+            android:layout_below="@+id/itemdetailsheader"
+            android:src="@drawable/iconlocation"/>
+
+        <TextView
+            android:textSize="11dp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/itemdetailslocatetext"
+            android:layout_below="@+id/itemdetailsheader"
+            android:layout_toRightOf="@+id/itemdetailslocateicon"
+            android:layout_toEndOf="@+id/itemdetailslocateicon"/>
+
+        <ImageView
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/itemdetailsicon"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="50dp"
+            android:src="@mipmap/rest"
+            android:layout_height="50dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/booking_groupicon"
+        android:src="@drawable/iconordernumber"
+        android:padding="10dp"
+        />
+
+    <com.adeel.foodsurfing.CustomTextView
+
+        app:customFont="fonts/Lato-Bold.ttf"
+        android:text="Name"
+        android:textSize="20dp"
+        android:textColor="#333333"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@+id/booking_groupicon"
+        android:layout_toEndOf="@+id/booking_groupicon"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/CustomerBokingName"/>
+
+    <com.adeel.foodsurfing.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="3.05"
+        android:textSize="30dp"
+        android:id="@+id/BookingTotalPrice"
+        android:textColor="@color/back1"
+        app:customFont="fonts/AmaticSC-Bold.ttf"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/bookingExpandIcon"
+        android:layout_toStartOf="@+id/bookingExpandIcon" />
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="50dp"
+        android:id="@+id/bookingExpandIcon"
+        android:src="@drawable/iconexpand"
+        android:padding="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/BookingCancel"
+        android:layout_toStartOf="@+id/BookingCancel" />
+
+    <ImageView
+        android:id="@+id/BookingCancel"
+        android:layout_width="45dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:src="@drawable/iconcrossred"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
